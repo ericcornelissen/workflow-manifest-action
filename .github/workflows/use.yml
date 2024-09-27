@@ -1,0 +1,11 @@
+name: Use
+
+on: [push]
+
+# `jobs` is required for Workflows
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/workflows

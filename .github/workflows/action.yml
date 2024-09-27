@@ -1,0 +1,19 @@
+name: Example
+
+## Workflow
+on: [push]
+jobs:
+  example:
+    name: Example
+    runs-on: ubuntu-latest
+    steps:
+      - name: Example
+        run: echo "Example"
+
+## Manifest
+runs:
+  using: composite
+  steps:
+    - name: Example
+      shell: bash
+      run: echo "Example"
